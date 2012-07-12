@@ -1,0 +1,17 @@
+!!! 5
+html
+	head
+	body
+		h3 Send Mail
+		form(action="/send",method="post")
+			span reciever: 
+			input(name="reciever",type="text")
+			br
+			span title:
+			input(name="title",type="text")
+			br
+			span content:
+			textarea(name="content")
+			br
+			input(type="submit",value="send")
+

@@ -1,0 +1,11 @@
+!!! 5
+html
+	head
+	body
+		form(action="/update/"+doc._id,method="post")
+			h4 title:
+			input(type="text",name="title",value=doc.title)
+			h4 content:
+			textarea(name="content") #{doc.body}
+			br
+			input(type="submit",value="submit")

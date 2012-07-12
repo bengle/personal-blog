@@ -1,0 +1,15 @@
+!!! 5
+html
+	head
+	body
+		h3 blog list
+		a(href="/new") 添加
+		ul
+			- each i in docs
+				li= i.title
+				li= i.date
+				li= i.body
+				li= i._id
+				a(href="/del/"+i._id) 删除
+				a(href="/alter/"+i._id) 修改
+				hr
